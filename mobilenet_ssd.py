@@ -9,7 +9,7 @@ import numpy as  np
 import cv2
 
 #get the video file as stream using cv2
-video_stream = cv2.VideoCapture('Sample Video/vd1.mp4')
+video_stream = cv2.VideoCapture('Sample Video/vd2.mp4')
 
 #create a while loop till the stream is open
 while (video_stream.isOpened):

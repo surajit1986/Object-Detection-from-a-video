@@ -1,0 +1,26 @@
+<!doctype html>
+<title>Object Detection Model</title>
+<h2>Select a video to upload: </h2>
+
+{% if filename %}
+	<div style="margin:auto;">
+
+		<br/>
+		<br/>
+		<video autoplay="autoplay" controls="controls" preload="preload">
+			<source src="{{ url_for('display_video', filename=filename) }}" type="video/mp4"></source>
+		</video>
+	</div>
+{% endif %}
+<div style="auto;">
+	<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Upload">
+	</p>
+</form>
+</div>
